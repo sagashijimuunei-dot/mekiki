@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+  <!-- 背景のポップな微細パターン（可読性を損なわないよう極薄） -->
+  <g fill="none" stroke="#2E2C39" stroke-width="2" opacity="0.05">
+    <rect x="26" y="34" width="58" height="26" rx="13"/>
+    <circle cx="196" cy="60" r="15"/>
+    <rect x="168" y="150" width="58" height="26" rx="13" transform="rotate(18 197 163)"/>
+    <circle cx="60" cy="176" r="14"/>
+    <circle cx="120" cy="120" r="7"/>
+  </g>
+  <g opacity="0.07">
+    <circle cx="210" cy="212" r="7" fill="#FB7B52"/>
+    <circle cx="40" cy="96" r="6" fill="#57B3E8"/>
+    <circle cx="150" cy="40" r="6" fill="#FFC24B"/>
+    <circle cx="98" cy="216" r="6" fill="#A483D9"/>
+    <circle cx="232" cy="120" r="5" fill="#5FC59C"/>
+  </g>
+</svg>
