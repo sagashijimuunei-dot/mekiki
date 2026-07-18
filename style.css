@@ -361,6 +361,9 @@ a.card:hover, a.card:focus, .card:hover { box-shadow: 8px 8px 0 rgba(46,44,57,0.
 .article-list a:nth-child(1) .tag { background: var(--pop-orange); }
 .article-list a:nth-child(2) .tag { background: var(--pop-sky); }
 .article-list a:nth-child(3) .tag { background: var(--pop-grape); }
+.article-list a:nth-child(4) .tag { background: var(--pop-mint); }
+.article-list a:nth-child(5) .tag { background: var(--pop-rose); }
+.article-list a:nth-child(6) .tag { background: var(--pop-leaf); }
 .article-item h3 { margin: 0 0 6px; font-size: 20px; font-weight: 800; }
 .article-item p  { margin: 0; font-size: 16px; color: var(--ink-soft); }
 
