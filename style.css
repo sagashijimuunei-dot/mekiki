@@ -358,12 +358,32 @@ a.card:hover, a.card:focus, .card:hover { box-shadow: 8px 8px 0 rgba(46,44,57,0.
   display: inline-block; color: #fff; font-size: 13px; font-weight: 800;
   border-radius: 999px; padding: 3px 13px; margin-bottom: 10px; border: 2px solid var(--ink);
 }
-.article-list a:nth-child(1) .tag { background: var(--pop-orange); }
-.article-list a:nth-child(2) .tag { background: var(--pop-sky); }
-.article-list a:nth-child(3) .tag { background: var(--pop-grape); }
-.article-list a:nth-child(4) .tag { background: var(--pop-mint); }
-.article-list a:nth-child(5) .tag { background: var(--pop-rose); }
-.article-list a:nth-child(6) .tag { background: var(--pop-leaf); }
+/* タグ色はカテゴリ別クラスで指定（全カード共通。以前の nth-child 方式は
+   7枚目以降が白抜けになるバグがあったため廃止） */
+.article-item .tag { background: var(--pop-leaf); } /* 保険の既定色 */
+.article-item .tag-basic      { background: var(--pop-orange); } /* 基礎知識 */
+.article-item .tag-system     { background: var(--pop-sky);    } /* 認証・制度 */
+.article-item .tag-compare    { background: var(--pop-grape);  } /* くらべ方 */
+.article-item .tag-ingredient { background: var(--pop-mint);   } /* 成分の基礎 */
+.article-item .tag-safety     { background: var(--pop-rose);   } /* 安全・注意 */
+
+/* ---------- コラム：カテゴリ絞り込みタブ ---------- */
+.col-filter { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 22px; }
+.col-filter button {
+  font: inherit; font-weight: 800; font-size: 14px; padding: 7px 16px;
+  border-radius: 999px; border: 2px solid var(--ink); background: var(--card);
+  color: var(--ink); cursor: pointer; box-shadow: 3px 3px 0 rgba(46,44,57,0.10);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.col-filter button:hover { transform: translateY(-2px); box-shadow: 4px 4px 0 rgba(46,44,57,0.14); }
+.col-filter button.active { background: var(--ink); color: #fff; }
+.col-filter button .cnt { margin-left: 5px; font-size: 12px; opacity: .65; }
+
+/* ---------- コラム：予約公開・絞り込みの表示制御 ----------
+   data-publish 付きカードは既定で非表示（JSが公開日を判定して .is-published を付与）。
+   JSが無効な環境では予約記事は表示されないだけで、既存記事は通常表示。 */
+.article-list .article-item[data-publish]:not(.is-published) { display: none; }
+.article-list .article-item.is-hidden { display: none; }
 .article-item h3 { margin: 0 0 6px; font-size: 20px; font-weight: 800; }
 .article-item p  { margin: 0; font-size: 16px; color: var(--ink-soft); }
 
@@ -432,3 +452,17 @@ a.card:hover, a.card:focus, .card:hover { box-shadow: 8px 8px 0 rgba(46,44,57,0.
   body { background: #fff; }
   .doc { box-shadow: none; border: 1px solid #ccc; }
 }
+
+/* ---------- ジャンル別コラム・アプリ紹介（2026-07-22追加） ---------- */
+.app-hero-icon--emoji { display: flex; align-items: center; justify-content: center; font-size: 64px; background: var(--card); }
+.app-thumb--emoji { display: grid; place-items: center; font-size: 44px; background: var(--card); }
+.genre-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 26px; }
+.genre-links a {
+  display: block; text-align: center; background: var(--card); color: var(--ink);
+  border: 2.5px solid var(--ink); border-radius: 14px; padding: 14px 10px;
+  font-weight: 800; text-decoration: none; box-shadow: 4px 4px 0 rgba(46,44,57,0.10);
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+.genre-links a:hover { transform: translateY(-2px); box-shadow: 6px 6px 0 rgba(46,44,57,0.14); }
+.genre-links .g-emoji { display: block; font-size: 30px; margin-bottom: 6px; }
+@media (max-width: 640px) { .genre-links { grid-template-columns: 1fr; } }
