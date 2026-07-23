@@ -1,10 +1,10 @@
 /* ============================================================
-   メキキHP 共通スクリプト site.js（2026-07-22）
+   メキキHP 共通スクリプト site.js（2026-07-22 v2）
    CSP（script-src 'self'）対応のため、インラインJSではなく
    本ファイルに全スクリプトをまとめています。
    1) ナビ開閉（全ページ）
    2) コラム予約公開（data-publish の日付が来たら自動表示）
-   3) コラムのカテゴリ絞り込みタブ
+   3) コラムのアコーディオン（題目＝カテゴリを開いて小題目＝記事を選ぶ）
    ============================================================ */
 (function () {
   'use strict';
@@ -19,13 +19,12 @@
     });
   }
 
-  var list = document.querySelector('.article-list');
-  if (!list) return; /* コラム一覧がないページはここまで */
+  var acc = document.querySelector('.col-accordion');
+  if (!acc) return; /* コラム一覧がないページはここまで */
 
   /* ---------- 2) 予約公開 ----------
-     カードに data-publish="YYYY-MM-DD" が付いている場合、
-     その日付になるまで非表示（CSS側で既定非表示 → ここで公開判定）。
-     日付なしのカードは常に表示。 */
+     data-publish="YYYY-MM-DD" が付いた記事は、その日付になるまで非表示。
+     日付なしの記事は常に公開。 */
   function todayStr() {
     var d = new Date();
     var m = String(d.getMonth() + 1);
@@ -34,51 +33,33 @@
     if (day.length < 2) day = '0' + day;
     return d.getFullYear() + '-' + m + '-' + day;
   }
-  var items = Array.prototype.slice.call(list.querySelectorAll('.article-item'));
   var today = todayStr();
+  var items = Array.prototype.slice.call(acc.querySelectorAll('.article-item'));
   items.forEach(function (item) {
     var pub = item.getAttribute('data-publish');
-    if (!pub || pub <= today) item.classList.add('is-published');
+    if (!pub || pub <= today) {
+      item.classList.add('is-published');
+    } else {
+      item.classList.add('is-hidden'); /* 未公開は非表示 */
+    }
   });
 
-  /* ---------- 3) カテゴリ絞り込み ---------- */
-  var filter = document.querySelector('.col-filter');
-  if (!filter) return;
-  var buttons = Array.prototype.slice.call(filter.querySelectorAll('button[data-filter]'));
-
-  function published() {
-    return items.filter(function (i) { return i.classList.contains('is-published'); });
-  }
-
-  /* ボタンに公開済み件数を表示 */
-  buttons.forEach(function (b) {
-    var key = b.getAttribute('data-filter');
-    var n = published().filter(function (i) {
-      return key === 'all' || i.getAttribute('data-cat') === key;
-    }).length;
-    var cnt = document.createElement('span');
-    cnt.className = 'cnt';
-    cnt.textContent = String(n);
-    b.appendChild(cnt);
-  });
-
-  function apply(key) {
-    items.forEach(function (i) {
-      var match = (key === 'all' || i.getAttribute('data-cat') === key);
-      i.classList.toggle('is-hidden', !match);
-    });
-    buttons.forEach(function (b) {
-      var active = b.getAttribute('data-filter') === key;
-      b.classList.toggle('active', active);
-      b.setAttribute('aria-pressed', active ? 'true' : 'false');
-    });
-  }
-
-  buttons.forEach(function (b) {
-    b.addEventListener('click', function () {
-      apply(b.getAttribute('data-filter'));
+  /* ---------- 3) アコーディオン（題目→小題目） ---------- */
+  var cats = Array.prototype.slice.call(acc.querySelectorAll('.col-cat'));
+  cats.forEach(function (cat) {
+    var published = cat.querySelectorAll('.article-item.is-published').length;
+    var cntEl = cat.querySelector('.col-cat-count');
+    if (cntEl) cntEl.textContent = String(published);
+    /* 公開済みが0件の題目は、まるごと隠す */
+    if (published === 0) {
+      cat.classList.add('is-hidden');
+      return;
+    }
+    var head = cat.querySelector('.col-cat-head');
+    if (!head) return;
+    head.addEventListener('click', function () {
+      var open = cat.classList.toggle('open');
+      head.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   });
-
-  apply('all');
 })();

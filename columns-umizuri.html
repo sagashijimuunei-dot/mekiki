@@ -47,40 +47,139 @@
       <p class="breadcrumb"><a href="index.html">ホーム</a> ＞ <a href="index.html#columns">コラム</a> ＞ 海釣りのコラム</p>
       <h2 class="section-title"><span class="accent-bar" aria-hidden="true"></span>海釣りのコラム</h2>
       <p class="section-desc">入門の基礎装備から、消耗品の価格のくらべ方、安全の基本、メンテナンスまで。海釣りの「選ぶ・調べる」を事実にもとづいてまとめています。</p>
-      <div class="col-filter" aria-label="コラムをカテゴリで絞り込む">
-        <button type="button" class="active" data-filter="all" aria-pressed="true">すべて</button>
-        <button type="button" data-filter="basic" aria-pressed="false">基礎知識</button>
-        <button type="button" data-filter="ingredient" aria-pressed="false">タックル</button>
-        <button type="button" data-filter="compare" aria-pressed="false">くらべ方</button>
-        <button type="button" data-filter="system" aria-pressed="false">中古・買取</button>
-        <button type="button" data-filter="safety" aria-pressed="false">安全・マナー</button>
+      <div class="oshidai" aria-label="お題（ジャンル）を選ぶ">
+        <a href="index.html#columns"><span class="o-emoji" aria-hidden="true">💊</span>サプリ</a>
+        <a href="columns-bass.html"><span class="o-emoji" aria-hidden="true">🎣</span>バス釣り</a>
+        <span class="current" aria-current="true"><span class="o-emoji" aria-hidden="true">🐟</span>海釣り</span>
+        <a href="columns-pet.html"><span class="o-emoji" aria-hidden="true">🐾</span>ペット</a>
       </div>
-      <div class="article-list">
-        <a class="article-item" href="column-umizuri-basics.html" data-cat="basic">
-          <span class="tag tag-basic">基礎知識</span>
-          <h3>海釣り入門の基礎装備　堤防釣りからはじめる</h3>
-          <p>サビキ・ちょい投げ・エギングなど代表的なスタイルと、最初に揃える基本装備を整理。</p>
-        </a>
-        <a class="article-item" href="column-umizuri-spec.html" data-cat="ingredient">
-          <span class="tag tag-ingredient">タックル</span>
-          <h3>ソルトロッド・リールの表記の読み方　S86M・C3000とは</h3>
-          <p>ロッドの「S86M」、リールの「C3000S」「HG」。型番の記号の意味と確認したい項目。</p>
-        </a>
-        <a class="article-item" href="column-umizuri-consumables.html" data-cat="compare">
-          <span class="tag tag-compare">くらべ方</span>
-          <h3>エギ・メタルジグなど消耗品の価格のくらべ方</h3>
-          <p>同じエギで約1.8倍差の実測例も。ロスト前提の消耗品こそ単価管理が効きます。</p>
-        </a>
-        <a class="article-item" href="column-umizuri-safety.html" data-cat="safety">
-          <span class="tag tag-safety">安全・マナー</span>
-          <h3>海釣りの安全の基本　ライフジャケットと天気の確認</h3>
-          <p>小型船舶での着用義務（桜マーク）、堤防・磯での注意、出発前チェックの基本。</p>
-        </a>
-        <a class="article-item" href="column-umizuri-maintenance.html" data-cat="system">
-          <span class="tag tag-system">中古・買取</span>
-          <h3>ソルトタックルのメンテナンスと中古・買取の基礎</h3>
-          <p>塩対策が道具の寿命と査定を分けます。使用後の基本メンテと中古売買の視点。</p>
-        </a>
+      <h3 class="col-genre-title"><span class="o-emoji" aria-hidden="true">🐟</span>海釣りのコラム</h3>
+      <div class="col-accordion" data-genre="umizuri">
+        <div class="col-cat" data-cat="basic">
+          <button class="col-cat-head" type="button" aria-expanded="false" aria-controls="cat-basic-umizuri">
+            <span class="col-cat-name">基礎知識</span>
+            <span class="col-cat-count" aria-hidden="true"></span>
+            <span class="col-cat-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="col-cat-body" id="cat-basic-umizuri">
+          <a class="article-item" href="column-umizuri-basics.html" data-cat="basic">
+            <h3>海釣り入門の基礎装備　堤防釣りからはじめる</h3>
+            <p>サビキ・ちょい投げ・エギングなど堤防釣りの代表的なスタイルと、最初に揃える基本装備を整理します。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-eging.html" data-cat="basic">
+            <h3>エギングの基礎　エギの号数・シーズン・タックル</h3>
+            <p>アオリイカをねらうエギングの基本。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-funazuri.html" data-cat="basic">
+            <h3>船釣り（乗合船）デビューの基礎　予約から下船まで</h3>
+            <p>はじめての乗合船。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-lightgame.html" data-cat="basic">
+            <h3>アジング・メバリングの基礎　ライトゲーム入門</h3>
+            <p>軽いジグヘッドとワームでアジ・メバルをねらうライトゲームの基本。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-shorejigging.html" data-cat="basic">
+            <h3>ショアジギングの基礎　ジグの重さとタックルバランス</h3>
+            <p>岸からメタルジグで青物などをねらうショアジギングの基本。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-tachiuo.html" data-cat="basic">
+            <h3>タチウオ釣りの基礎　ワインド・テンヤ・時期の目安</h3>
+            <p>秋の人気ターゲット、タチウオの岸からの釣り方（ワインド・テンヤ・メタルジグ）と、安全に扱うための注意を整理します。</p>
+          </a>
+          </div>
+        </div>
+        <div class="col-cat" data-cat="ingredient">
+          <button class="col-cat-head" type="button" aria-expanded="false" aria-controls="cat-ingredient-umizuri">
+            <span class="col-cat-name">タックル</span>
+            <span class="col-cat-count" aria-hidden="true"></span>
+            <span class="col-cat-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="col-cat-body" id="cat-ingredient-umizuri">
+          <a class="article-item" href="column-umizuri-cooler.html" data-cat="ingredient">
+            <h3>クーラーボックスの選び方　保冷力表記と容量の目安</h3>
+            <p>断熱材の種類（発泡スチロール・ウレタン・真空パネル）と保冷力表記の見方、釣りものに合わせた容量の目安を整理します。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-gou.html" data-cat="ingredient">
+            <h3>号数・オモリ・針の規格の読み方　海釣り仕掛けの単位</h3>
+            <p>ハリス・道糸の号数、オモリの号数（1号＝3.75g）、針の号数など、海釣りの仕掛けに使われる規格の意味を整理します。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-pe-leader.html" data-cat="ingredient">
+            <h3>PEラインとリーダーの基礎　号数・強度・結束</h3>
+            <p>海のルアー釣りの主流PEライン。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-spec.html" data-cat="ingredient">
+            <h3>ソルトロッド・リールの表記の読み方　S86M・C3000とは</h3>
+            <p>「S86M」「C3000S」などソルトタックルの型番・スペック表記の意味と、見くらべで確認したい項目を整理します。</p>
+          </a>
+          </div>
+        </div>
+        <div class="col-cat" data-cat="compare">
+          <button class="col-cat-head" type="button" aria-expanded="false" aria-controls="cat-compare-umizuri">
+            <span class="col-cat-name">くらべ方</span>
+            <span class="col-cat-count" aria-hidden="true"></span>
+            <span class="col-cat-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="col-cat-body" id="cat-compare-umizuri">
+          <a class="article-item" href="column-umizuri-budget.html" data-cat="compare">
+            <h3>海釣りの予算配分の考え方　どこにお金をかけるか</h3>
+            <p>限られた予算で海釣りを始める・続けるときの、安全装備優先の考え方と道具ごとのお金のかけどころを整理します。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-bulk-buy.html" data-cat="compare">
+            <h3>消耗品のまとめ買いと保管　単価を下げて無駄にしない</h3>
+            <p>エギ・ジグ・仕掛け・ラインなど海釣り消耗品のまとめ買いの損益分岐と、劣化させない保管方法を整理します。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-consumables.html" data-cat="compare">
+            <h3>エギ・メタルジグなど消耗品の価格のくらべ方</h3>
+            <p>ロスト前提の消耗品こそ単価管理が効く。</p>
+          </a>
+          </div>
+        </div>
+        <div class="col-cat" data-cat="system">
+          <button class="col-cat-head" type="button" aria-expanded="false" aria-controls="cat-system-umizuri">
+            <span class="col-cat-name">中古・買取</span>
+            <span class="col-cat-count" aria-hidden="true"></span>
+            <span class="col-cat-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="col-cat-body" id="cat-system-umizuri">
+          <a class="article-item" href="column-umizuri-kaitori-souba.html" data-cat="system">
+            <h3>高額ソルトタックルの買取相場の調べ方</h3>
+            <p>使わなくなったリール・ロッドを手放す前に。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-maintenance.html" data-cat="system">
+            <h3>ソルトタックルのメンテナンスと中古・買取の基礎</h3>
+            <p>海釣りの道具は塩対策が寿命を分けます。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-used-check.html" data-cat="system">
+            <h3>中古ソルトタックル購入前チェックリスト</h3>
+            <p>中古のソルト用リール・ロッドを買う前に確認したいポイントを、チェックリスト形式でまとめました。</p>
+          </a>
+          </div>
+        </div>
+        <div class="col-cat" data-cat="safety">
+          <button class="col-cat-head" type="button" aria-expanded="false" aria-controls="cat-safety-umizuri">
+            <span class="col-cat-name">安全・マナー</span>
+            <span class="col-cat-count" aria-hidden="true"></span>
+            <span class="col-cat-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="col-cat-body" id="cat-safety-umizuri">
+          <a class="article-item" href="column-umizuri-lifejacket.html" data-cat="safety">
+            <h3>ライフジャケットの種類と選び方　桜マークとタイプの意味</h3>
+            <p>固型式と膨脹式、桜マーク（型式承認）とタイプA〜Gの区分など、ライフジャケット選びの基本を整理します。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-night-safety.html" data-cat="safety">
+            <h3>夜釣りの安全とマナー　ライト・単独回避・近隣配慮</h3>
+            <p>タチウオ・アジング・イカ釣りなど夜の釣りに必要な装備と安全対策、住宅地に近い釣り場でのマナーを整理します。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-safety.html" data-cat="safety">
+            <h3>海釣りの安全の基本　ライフジャケットと天気の確認</h3>
+            <p>小型船舶でのライフジャケット着用義務（桜マーク）、堤防・磯での注意、天候確認の基本を整理します。</p>
+          </a>
+          <a class="article-item" href="column-umizuri-weather.html" data-cat="safety">
+            <h3>天気・波・潮の調べ方　釣行前チェックの基本</h3>
+            <p>天気予報・波の高さ・警報注意報・潮汐（潮回り）など、海釣りの釣行前に確認したい情報源と見方を整理します。</p>
+          </a>
+          </div>
+        </div>
       </div>
       <div class="note-box" style="margin-top:26px;">アプリ「<a href="umizurimekiki.html">海釣りメキキ</a>」を開発中です。ほかのジャンルのコラム：<a href="index.html#columns">サプリ</a>／<a href="columns-bass.html">バス釣り</a>／<a href="columns-pet.html">ペット</a></div>
     </div>

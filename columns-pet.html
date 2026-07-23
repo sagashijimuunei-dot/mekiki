@@ -47,40 +47,139 @@
       <p class="breadcrumb"><a href="index.html">ホーム</a> ＞ <a href="index.html#columns">コラム</a> ＞ ペットのコラム</p>
       <h2 class="section-title"><span class="accent-bar" aria-hidden="true"></span>ペットのコラム</h2>
       <p class="section-desc">フードの表示の見方から、価格のくらべ方、ペットとのおでかけ・宿泊、健康と安全まで。ペットとの暮らしの「選ぶ・調べる」を事実にもとづいてまとめています。</p>
-      <div class="col-filter" aria-label="コラムをカテゴリで絞り込む">
-        <button type="button" class="active" data-filter="all" aria-pressed="true">すべて</button>
-        <button type="button" data-filter="basic" aria-pressed="false">基礎知識</button>
-        <button type="button" data-filter="ingredient" aria-pressed="false">フード・ごはん</button>
-        <button type="button" data-filter="compare" aria-pressed="false">くらべ方</button>
-        <button type="button" data-filter="system" aria-pressed="false">おでかけ・宿泊</button>
-        <button type="button" data-filter="safety" aria-pressed="false">健康・安全</button>
+      <div class="oshidai" aria-label="お題（ジャンル）を選ぶ">
+        <a href="index.html#columns"><span class="o-emoji" aria-hidden="true">💊</span>サプリ</a>
+        <a href="columns-bass.html"><span class="o-emoji" aria-hidden="true">🎣</span>バス釣り</a>
+        <a href="columns-umizuri.html"><span class="o-emoji" aria-hidden="true">🐟</span>海釣り</a>
+        <span class="current" aria-current="true"><span class="o-emoji" aria-hidden="true">🐾</span>ペット</span>
       </div>
-      <div class="article-list">
-        <a class="article-item" href="column-pet-food-label.html" data-cat="ingredient">
-          <span class="tag tag-ingredient">フード・ごはん</span>
-          <h3>ペットフードの表示の見方　「総合栄養食」と「一般食」のちがい</h3>
-          <p>ペットフード安全法の表示義務と目的区分の意味。主食かおかずかはここでわかります。</p>
-        </a>
-        <a class="article-item" href="column-pet-unit-price.html" data-cat="compare">
-          <span class="tag tag-compare">くらべ方</span>
-          <h3>フード・猫砂の価格のくらべ方　容量単価と送料込みで見る</h3>
-          <p>送料で最安が入れ替わる実測例も。容量単価（円/kg・円/L）で見くらべるコツ。</p>
-        </a>
-        <a class="article-item" href="column-pet-stay.html" data-cat="system">
-          <span class="tag tag-system">おでかけ・宿泊</span>
-          <h3>ペットと泊まれる宿の探し方と基本マナー</h3>
-          <p>ペット料金・サイズ制限・同伴範囲・ワクチン証明。予約前チェックと宿でのマナー。</p>
-        </a>
-        <a class="article-item" href="column-pet-dangerous-foods.html" data-cat="safety">
-          <span class="tag tag-safety">健康・安全</span>
-          <h3>犬・猫に与えてはいけない食べ物の基礎知識</h3>
-          <p>チョコ・ネギ類・ブドウ・キシリトールなど中毒の原因になることが知られている代表例。</p>
-        </a>
-        <a class="article-item" href="column-pet-supplements.html" data-cat="basic">
-          <span class="tag tag-basic">基礎知識</span>
-          <h3>ペット用サプリ・療法食の基礎　動物用医薬品とのちがい</h3>
-          <p>動物用医薬品・療法食・サプリの制度上の位置づけと、事実で選ぶための表示の見方。</p>
-        </a>
+      <h3 class="col-genre-title"><span class="o-emoji" aria-hidden="true">🐾</span>ペットのコラム</h3>
+      <div class="col-accordion" data-genre="pet">
+        <div class="col-cat" data-cat="basic">
+          <button class="col-cat-head" type="button" aria-expanded="false" aria-controls="cat-basic-pet">
+            <span class="col-cat-name">基礎知識</span>
+            <span class="col-cat-count" aria-hidden="true"></span>
+            <span class="col-cat-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="col-cat-body" id="cat-basic-pet">
+          <a class="article-item" href="column-pet-before-welcoming.html" data-cat="basic">
+            <h3>犬・猫を迎える前に知っておきたい基礎　種類・環境・費用</h3>
+            <p>犬や猫を家族に迎える前に考えたい、種類・飼育環境・生涯にかかる費用の目安と、入手経路（保護・ブリーダー・ペットショップ）の基礎を整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-insurance.html" data-cat="basic">
+            <h3>ペット保険の基礎　仕組みと選ぶときの視点</h3>
+            <p>ペット保険の一般的な仕組み（補償割合・免責・待機期間・年齢条件）と、比較するときに確認したい視点を、事実にもとづいて整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-registration.html" data-cat="basic">
+            <h3>犬の登録・狂犬病予防注射とマイクロチップの基礎</h3>
+            <p>犬の飼い主に義務づけられている登録と狂犬病予防注射、2022年から始まったマイクロチップ制度について、制度の枠組みを整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-supplements.html" data-cat="basic">
+            <h3>ペット用サプリ・療法食の基礎　動物用医薬品とのちがい</h3>
+            <p>動物用医薬品・療法食・ペット用サプリメントの制度上の位置づけのちがいと、選ぶときに確認したい表示を整理します。</p>
+          </a>
+          </div>
+        </div>
+        <div class="col-cat" data-cat="ingredient">
+          <button class="col-cat-head" type="button" aria-expanded="false" aria-controls="cat-ingredient-pet">
+            <span class="col-cat-name">フード・ごはん</span>
+            <span class="col-cat-count" aria-hidden="true"></span>
+            <span class="col-cat-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="col-cat-body" id="cat-ingredient-pet">
+          <a class="article-item" href="column-pet-cat-dog-nutrition.html" data-cat="ingredient">
+            <h3>猫と犬の栄養の違い　フードを分ける理由</h3>
+            <p>猫が「完全な肉食」に近く、犬と必要な栄養が異なる理由。</p>
+          </a>
+          <a class="article-item" href="column-pet-dry-wet.html" data-cat="ingredient">
+            <h3>ドライフードとウェットフードの違いと使い分け</h3>
+            <p>ドライ・ウェット・セミモイストなどフードの形状の違いと、水分量・保存性・価格の観点からの一般的な使い分けを整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-food-age.html" data-cat="ingredient">
+            <h3>年齢別フードの選び方　子犬・子猫からシニアまで</h3>
+            <p>ライフステージ（成長期・成犬成猫・シニア）ごとにフードの設計が異なる理由と、表示の対象年齢の見方を整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-food-label.html" data-cat="ingredient">
+            <h3>ペットフードの表示の見方　「総合栄養食」と「一般食」のちがい</h3>
+            <p>ペットフード安全法による表示義務と、総合栄養食・間食・一般食などの区分の意味を、事実にもとづいて整理します。</p>
+          </a>
+          </div>
+        </div>
+        <div class="col-cat" data-cat="compare">
+          <button class="col-cat-head" type="button" aria-expanded="false" aria-controls="cat-compare-pet">
+            <span class="col-cat-name">くらべ方</span>
+            <span class="col-cat-count" aria-hidden="true"></span>
+            <span class="col-cat-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="col-cat-body" id="cat-compare-pet">
+          <a class="article-item" href="column-pet-compare-services.html" data-cat="compare">
+            <h3>ペットのサービスを比べる視点　保険・シッター・トリミング</h3>
+            <p>ペット保険・ペットシッター・トリミングなど、モノではないサービスを比較するときに確認したい条件と注意点を整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-goods-price.html" data-cat="compare">
+            <h3>ペット用品の価格の調べ方　トイレ用品・ケア用品のくらべ方</h3>
+            <p>ペットシーツ・トイレ砂・シャンプーなど繰り返し買う消耗品を、枚数単価・容量単価で比べるコツと、送料・定期便の見方を整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-litter.html" data-cat="compare">
+            <h3>猫砂の種類とくらべ方　鉱物・紙・木・おから・シリカ</h3>
+            <p>猫砂の主な素材（鉱物系・紙系・木系・おから系・シリカゲル系）ごとの一般的な特徴と、固まり方・処理方法・コストの比べ方を整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-unit-price.html" data-cat="compare">
+            <h3>フード・猫砂の価格のくらべ方　容量単価と送料込みで見る</h3>
+            <p>容量ちがいのフード・猫砂は「1kg・1Lあたり単価」で比較。</p>
+          </a>
+          </div>
+        </div>
+        <div class="col-cat" data-cat="system">
+          <button class="col-cat-head" type="button" aria-expanded="false" aria-controls="cat-system-pet">
+            <span class="col-cat-name">おでかけ・宿泊</span>
+            <span class="col-cat-count" aria-hidden="true"></span>
+            <span class="col-cat-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="col-cat-body" id="cat-system-pet">
+          <a class="article-item" href="column-pet-car-travel.html" data-cat="system">
+            <h3>車でのペット移動の基礎　安全・ケージ・休憩</h3>
+            <p>車でペットと移動するときの安全対策（ケージ・クレートの固定）、酔い・熱中症への配慮、休憩の取り方を整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-facility-manner.html" data-cat="system">
+            <h3>ドッグラン・同伴施設のマナーの基礎</h3>
+            <p>ドッグランやペット同伴のカフェ・商業施設を利用するときの一般的なルールとマナー、トラブルを避けるための基本を整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-public-transport.html" data-cat="system">
+            <h3>公共交通機関でのペット同伴ルールの基礎</h3>
+            <p>電車・バス・飛行機などでペットを連れて移動するときの一般的なルール（キャリーの条件・手回り品料金）と、事前確認のポイントを整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-stay.html" data-cat="system">
+            <h3>ペットと泊まれる宿の探し方と基本マナー</h3>
+            <p>ペット同伴宿泊の予約前に確認したいこと（ペット料金・サイズ制限・同伴範囲・持ち物）と、宿での基本マナーを整理します。</p>
+          </a>
+          </div>
+        </div>
+        <div class="col-cat" data-cat="safety">
+          <button class="col-cat-head" type="button" aria-expanded="false" aria-controls="cat-safety-pet">
+            <span class="col-cat-name">健康・安全</span>
+            <span class="col-cat-count" aria-hidden="true"></span>
+            <span class="col-cat-arrow" aria-hidden="true">▾</span>
+          </button>
+          <div class="col-cat-body" id="cat-safety-pet">
+          <a class="article-item" href="column-pet-dangerous-foods.html" data-cat="safety">
+            <h3>犬・猫に与えてはいけない食べ物の基礎知識</h3>
+            <p>チョコレート・ネギ類・ブドウなど、犬や猫に中毒を起こすことが知られている身近な食べ物と、食べてしまったときの対応の基本。</p>
+          </a>
+          <a class="article-item" href="column-pet-disaster.html" data-cat="safety">
+            <h3>ペットの防災の備え　同行避難と備蓄の基礎</h3>
+            <p>災害時にペットと安全に避難するための「同行避難」の考え方、日頃の備え（備蓄・しつけ・キャリー慣れ）、迷子対策を整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-parasite.html" data-cat="safety">
+            <h3>ノミ・ダニ・フィラリア予防の基礎</h3>
+            <p>犬・猫のノミ・マダニ、犬のフィラリア（犬糸状虫）予防の一般的な考え方と、動物用医薬品・獣医師の処方に関わる基礎を整理します。</p>
+          </a>
+          <a class="article-item" href="column-pet-season-care.html" data-cat="safety">
+            <h3>季節ごとの健康管理　夏の熱中症・冬の寒さ対策</h3>
+            <p>犬・猫の夏の熱中症、冬の寒さ・乾燥、季節の変わり目の体調変化への一般的な備えを整理します。</p>
+          </a>
+          </div>
+        </div>
       </div>
       <div class="note-box" style="margin-top:26px;">アプリ「<a href="petmekiki.html">ペットメキキ</a>」を開発中です。ほかのジャンルのコラム：<a href="index.html#columns">サプリ</a>／<a href="columns-bass.html">バス釣り</a>／<a href="columns-umizuri.html">海釣り</a></div>
     </div>

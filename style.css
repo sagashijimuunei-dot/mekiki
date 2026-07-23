@@ -466,3 +466,71 @@ a.card:hover, a.card:focus, .card:hover { box-shadow: 8px 8px 0 rgba(46,44,57,0.
 .genre-links a:hover { transform: translateY(-2px); box-shadow: 6px 6px 0 rgba(46,44,57,0.14); }
 .genre-links .g-emoji { display: block; font-size: 30px; margin-bottom: 6px; }
 @media (max-width: 640px) { .genre-links { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   コラム：お題→題目→小題目 ドリルダウン（2026-07-22 v2）
+   ============================================================ */
+/* お題（ジャンル）セレクタ */
+.oshidai { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 4px 0 22px; }
+.oshidai a, .oshidai .current {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  text-align: center; font-weight: 800; font-size: 15px; text-decoration: none;
+  border: 2.5px solid var(--ink); border-radius: 14px; padding: 12px 6px; color: var(--ink);
+  background: var(--card); box-shadow: 4px 4px 0 rgba(46,44,57,0.10);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.oshidai a:hover { transform: translateY(-2px); box-shadow: 6px 6px 0 rgba(46,44,57,0.16); }
+.oshidai .current { background: var(--ink); color: #fff; }
+.oshidai .o-emoji { font-size: 26px; line-height: 1; }
+
+/* ジャンル見出し */
+.col-genre-title { display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 800; margin: 6px 0 14px; }
+.col-genre-title .o-emoji { font-size: 24px; }
+
+/* 題目（カテゴリ）アコーディオン */
+.col-accordion { display: grid; gap: 12px; }
+.col-cat {
+  border: 2.5px solid var(--ink); border-radius: 16px; background: var(--card);
+  box-shadow: 5px 5px 0 rgba(46,44,57,0.10); overflow: hidden;
+}
+.col-cat.is-hidden { display: none; }
+.col-cat-head {
+  width: 100%; display: flex; align-items: center; gap: 11px;
+  background: none; border: none; font: inherit; font-weight: 800; font-size: 18px;
+  color: var(--ink); text-align: left; padding: 17px 18px; cursor: pointer;
+}
+.col-cat-head::before {
+  content: ""; flex: 0 0 auto; width: 15px; height: 15px; border-radius: 5px;
+  border: 2px solid var(--ink); background: var(--pop-leaf);
+}
+.col-cat[data-cat="basic"]      .col-cat-head::before { background: var(--pop-orange); }
+.col-cat[data-cat="system"]     .col-cat-head::before { background: var(--pop-sky); }
+.col-cat[data-cat="compare"]    .col-cat-head::before { background: var(--pop-grape); }
+.col-cat[data-cat="ingredient"] .col-cat-head::before { background: var(--pop-mint); }
+.col-cat[data-cat="safety"]     .col-cat-head::before { background: var(--pop-rose); }
+.col-cat-head .col-cat-count {
+  margin-left: auto; font-size: 13px; font-weight: 800; color: var(--ink);
+  background: var(--cream-2); border: 2px solid var(--ink); border-radius: 999px; padding: 1px 10px;
+}
+.col-cat-head .col-cat-arrow { font-size: 13px; transition: transform .2s ease; }
+.col-cat.open .col-cat-head .col-cat-arrow { transform: rotate(180deg); }
+.col-cat-head:hover { background: rgba(46,44,57,0.03); }
+
+/* 小題目（記事）— 閉じているときは非表示 */
+.col-cat-body { display: none; padding: 2px 14px 16px; }
+.col-cat.open .col-cat-body { display: grid; gap: 10px; }
+.col-cat-body .article-item {
+  padding: 14px 16px; border: 2px solid var(--ink); border-radius: 12px;
+  box-shadow: 3px 3px 0 rgba(46,44,57,0.08); background: var(--card);
+  text-decoration: none; color: var(--ink); display: block;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.col-cat-body .article-item:hover { transform: translateY(-2px); box-shadow: 5px 5px 0 rgba(46,44,57,0.14); }
+.col-cat-body .article-item.is-hidden { display: none; }
+.col-cat-body .article-item h3 { margin: 0 0 5px; font-size: 16px; font-weight: 800; line-height: 1.5; }
+.col-cat-body .article-item p { margin: 0; font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+
+@media (max-width: 640px) {
+  .oshidai { grid-template-columns: repeat(2, 1fr); }
+  .col-cat-head { font-size: 17px; }
+}
