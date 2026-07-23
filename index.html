@@ -46,24 +46,39 @@
   <!-- ヒーロー -->
   <section class="hero">
     <svg class="hero-deco" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <g stroke="#2E2C39" stroke-width="3" opacity="0.92">
-        <g transform="rotate(-14 74 52)">
-          <rect x="18" y="30" width="112" height="44" rx="22" fill="#FB7B52"/>
-          <rect x="74" y="30" width="56" height="44" rx="22" fill="#57B3E8"/>
-          <rect x="18" y="30" width="112" height="44" rx="22" fill="none"/>
+      <g stroke="#2E2C39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" opacity="0.92">
+        <!-- 目利き（虫めがね）＝メキキ共通の象徴：左上 -->
+        <g transform="rotate(-8 74 74)">
+          <circle cx="74" cy="70" r="30" fill="#FFC24B"/>
+          <circle cx="74" cy="70" r="30" fill="none"/>
+          <line x1="96" y1="92" x2="123" y2="119" stroke-width="7"/>
         </g>
-        <circle cx="1096" cy="92" r="32" fill="#FFC24B"/>
-        <line x1="1096" y1="64" x2="1096" y2="120" stroke-width="2.6" opacity="0.55"/>
-        <g transform="rotate(22 1044 432)">
-          <rect x="986" y="410" width="116" height="44" rx="22" fill="#A483D9"/>
-          <rect x="986" y="410" width="116" height="44" rx="22" fill="none"/>
+        <!-- 釣り（さかな）：右上 -->
+        <g transform="rotate(-7 1092 84)">
+          <ellipse cx="1090" cy="84" rx="40" ry="21" fill="#57B3E8"/>
+          <path d="M1126 84 L1151 65 L1151 103 Z" fill="#57B3E8"/>
+          <circle cx="1072" cy="79" r="3.4" fill="#2E2C39" stroke="none"/>
         </g>
-        <circle cx="78" cy="452" r="24" fill="#5FC59C"/>
-        <line x1="78" y1="430" x2="78" y2="474" stroke-width="2.4" opacity="0.5"/>
+        <!-- ペット（にくきゅう）：左下 -->
+        <g transform="translate(86 446)">
+          <ellipse cx="0" cy="7" rx="16" ry="13" fill="#FF93AE"/>
+          <circle cx="-17" cy="-12" r="6.5" fill="#FF93AE"/>
+          <circle cx="-6" cy="-20" r="6.5" fill="#FF93AE"/>
+          <circle cx="7" cy="-20" r="6.5" fill="#FF93AE"/>
+          <circle cx="18" cy="-12" r="6.5" fill="#FF93AE"/>
+        </g>
+        <!-- サプリ（カプセル）：右下 -->
+        <g transform="rotate(24 1036 432)">
+          <rect x="980" y="410" width="112" height="44" rx="22" fill="#FB7B52"/>
+          <rect x="1036" y="410" width="56" height="44" rx="22" fill="#5FC59C"/>
+          <rect x="980" y="410" width="112" height="44" rx="22" fill="none"/>
+        </g>
+        <!-- 装飾の小さな丸 -->
         <circle cx="1158" cy="250" r="12" fill="none"/>
         <circle cx="1140" cy="60" r="8" fill="none"/>
         <circle cx="42" cy="300" r="9" fill="none"/>
         <circle cx="1128" cy="470" r="7" fill="none"/>
+        <circle cx="1150" cy="150" r="6" fill="#A483D9"/>
       </g>
     </svg>
     <div class="container">
