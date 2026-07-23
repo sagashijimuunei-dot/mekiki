@@ -7,6 +7,9 @@
 <meta name="description" content="ペットフードの目的別区分をわかりやすく整理。主食にできる総合栄養食、補助的な一般食、獣医師の指導が前提の療法食のちがいを解説します。">
 <link rel="canonical" href="https://sagashijimuunei-dot.github.io/mekiki/column-pet-nutrition-standard.html">
 <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="format-detection" content="telephone=no">
 </head>
 <body>
 <a class="skip-link" href="#main">本文へスキップ</a>
@@ -101,17 +104,6 @@
   </div>
 </footer>
 
-<script>
-  (function () {
-    var btn = document.querySelector('.nav-toggle');
-    var nav = document.getElementById('site-nav');
-    if (btn && nav) {
-      btn.addEventListener('click', function () {
-        var open = nav.classList.toggle('open');
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-    }
-  })();
-</script>
+<script src="site.js" defer></script>
 </body>
 </html>
