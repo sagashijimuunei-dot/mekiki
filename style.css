@@ -471,7 +471,7 @@ a.card:hover, a.card:focus, .card:hover { box-shadow: 8px 8px 0 rgba(46,44,57,0.
    コラム：お題→題目→小題目 ドリルダウン（2026-07-22 v2）
    ============================================================ */
 /* お題（ジャンル）セレクタ */
-.oshidai { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 4px 0 22px; }
+.oshidai { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin: 4px 0 22px; }
 .oshidai a, .oshidai .current {
   display: flex; flex-direction: column; align-items: center; gap: 4px;
   text-align: center; font-weight: 800; font-size: 15px; text-decoration: none;
@@ -539,3 +539,29 @@ a.card:hover, a.card:focus, .card:hover { box-shadow: 8px 8px 0 rgba(46,44,57,0.
 @media (max-width: 640px) {
   .hero-deco { opacity: 0.5; }
 }
+
+/* お題 中間ブレークポイント（2026-07-23：5ジャンル化） */
+@media (max-width: 900px) and (min-width: 641px) { .oshidai { grid-template-columns: repeat(3, 1fr); } }
+
+/* ============================================================
+   アフィリエイト土台：対応ストアボタン（2026-07-23）
+   ※href未設定のプレースホルダは <span class="store-btn is-placeholder"> で非クリック。
+     各ASPで取得したリンクに差し替える際は <a class="store-btn" href="..."> にする。
+   ============================================================ */
+.store-links { margin: 24px 0 8px; border: 2.5px dashed var(--ink); border-radius: 14px; padding: 16px 18px; background: var(--cream-2); }
+.store-links-head { font-weight: 800; display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.store-links-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.store-btn {
+  display: inline-flex; align-items: center; gap: 6px; font: inherit; font-weight: 800; font-size: 15px;
+  padding: 10px 16px; border: 2.5px solid var(--ink); border-radius: 999px; color: var(--ink);
+  background: var(--card); text-decoration: none; box-shadow: 3px 3px 0 rgba(46,44,57,0.12);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.store-btn:hover { transform: translateY(-2px); box-shadow: 5px 5px 0 rgba(46,44,57,0.16); }
+.store-btn small { font-weight: 600; font-size: 12px; color: var(--ink-soft); }
+.store-btn.is-placeholder { opacity: .6; cursor: default; box-shadow: none; }
+.store-btn.is-placeholder:hover { transform: none; box-shadow: none; }
+.store-btn[data-store="rakuten"]:not(.is-placeholder) { background: var(--pop-rose); }
+.store-btn[data-store="amazon"]:not(.is-placeholder)  { background: var(--pop-yellow); }
+.store-btn[data-store="yahoo"]:not(.is-placeholder)   { background: var(--pop-sky); }
+.store-links-note { font-size: 13px; color: var(--ink-soft); margin: 10px 0 0; }
