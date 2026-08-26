@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mekikiapp.com/apps.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://mekikiapp.com/bassmekiki.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -698,7 +698,7 @@
   </url>
   <url>
     <loc>https://mekikiapp.com/columns-golfsnow.html</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -848,25 +848,25 @@
   </url>
   <url>
     <loc>https://mekikiapp.com/golfsnowmekiki.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mekikiapp.com/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mekikiapp.com/petmekiki.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mekikiapp.com/privacy.html</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -878,13 +878,13 @@
   </url>
   <url>
     <loc>https://mekikiapp.com/terms.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mekikiapp.com/umizurimekiki.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -974,7 +974,7 @@
   </url>
   <url>
     <loc>https://mekikiapp.com/app-supplemekiki-what-is.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1075,6 +1075,42 @@
   <url>
     <loc>https://mekikiapp.com/column-nutrition-panel.html</loc>
     <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mekikiapp.com/turimekiki.html</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mekikiapp.com/kokoro.html</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mekikiapp.com/app-privacy.html</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mekikiapp.com/app-terms.html</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mekikiapp.com/column-caffeine.html</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mekikiapp.com/column-subscription.html</loc>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
