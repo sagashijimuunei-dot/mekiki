@@ -22,6 +22,8 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="theme-preview.css">
+<link rel="stylesheet" href="home-preview.css">
 </head>
 <body>
 <a class="skip-link" href="#main">本文へスキップ</a>
@@ -54,55 +56,18 @@
 
 <main id="main">
 
-  <!-- ヒーロー -->
-  <section class="hero">
-    <svg class="hero-deco" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <g stroke="#2E2C39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" opacity="0.92">
-        <!-- 目利き（虫めがね）＝メキキ共通の象徴：左上 -->
-        <g transform="rotate(-8 74 74)">
-          <circle cx="74" cy="70" r="30" fill="#FFC24B"/>
-          <circle cx="74" cy="70" r="30" fill="none"/>
-          <line x1="96" y1="92" x2="123" y2="119" stroke-width="7"/>
-        </g>
-        <!-- 釣り（さかな）：右上 -->
-        <g transform="rotate(-7 1092 84)">
-          <ellipse cx="1090" cy="84" rx="40" ry="21" fill="#57B3E8"/>
-          <path d="M1126 84 L1151 65 L1151 103 Z" fill="#57B3E8"/>
-          <circle cx="1072" cy="79" r="3.4" fill="#2E2C39" stroke="none"/>
-        </g>
-        <!-- ペット（にくきゅう）：左下 -->
-        <g transform="translate(86 446)">
-          <ellipse cx="0" cy="7" rx="16" ry="13" fill="#FF93AE"/>
-          <circle cx="-17" cy="-12" r="6.5" fill="#FF93AE"/>
-          <circle cx="-6" cy="-20" r="6.5" fill="#FF93AE"/>
-          <circle cx="7" cy="-20" r="6.5" fill="#FF93AE"/>
-          <circle cx="18" cy="-12" r="6.5" fill="#FF93AE"/>
-        </g>
-        <!-- サプリ（カプセル）：右下 -->
-        <g transform="rotate(24 1036 432)">
-          <rect x="980" y="410" width="112" height="44" rx="22" fill="#FB7B52"/>
-          <rect x="1036" y="410" width="56" height="44" rx="22" fill="#5FC59C"/>
-          <rect x="980" y="410" width="112" height="44" rx="22" fill="none"/>
-        </g>
-        <!-- 装飾の小さな丸 -->
-        <circle cx="1158" cy="250" r="12" fill="none"/>
-        <circle cx="1140" cy="60" r="8" fill="none"/>
-        <circle cx="42" cy="300" r="9" fill="none"/>
-        <circle cx="1128" cy="470" r="7" fill="none"/>
-        <circle cx="1150" cy="150" r="6" fill="#A483D9"/>
-      </g>
-    </svg>
-    <div class="container">
-      <h1>最後に選ぶのは、<span class="hl">あなたのメキキ</span>。</h1>
-      <p class="lead">さがして、目利き。<br>アプリが候補を集めて、値段や中身をならべます。決めるのは、あなた。</p>
-      <p class="sub">値段をならべて見くらべられるものは、値段で。そうでないものは、選ぶときの手がかりを<strong>事実</strong>で。カード情報は不要。買うのはいつものお店で。押し売りはしません。</p>
-      <div class="btn-row" style="margin-top:8px;">
-        <a class="btn btn-accent" href="apps.html">アプリを見る</a>
-        <a class="btn btn-outline" href="#columns">コラムを読む</a>
-      </div>
-    </div>
-  </section>
-
+<section class="mk-hero" aria-labelledby="mk-title">
+ <div class="mk-copy"><p class="mk-eyebrow">MEKIKI APPS / さがして、目利き。</p>
+ <h1 id="mk-title">暮らしに、<br>ぴったりのアプリを。</h1>
+ <p class="mk-lead">記録も、道具選びも。メキキでもっと楽しく。</p>
+ <div class="mk-feature"><img src="assets/pet-icon.png" width="68" height="68" alt=""><div><small>第1弾・公開準備中</small><h2>ペットメキキ</h2><p>うちの子の毎日を、ひとつに。</p></div></div>
+ <a class="mk-button" href="petmekiki.html">アプリを詳しく見る <span>→</span></a>
+ <p class="mk-note">最後に選ぶのは、あなたのメキキ。</p></div>
+ <div class="mk-stage"><div class="mk-phone"><img src="assets/pet-screen-9752.png" width="828" height="1792" alt="ペットメキキの実画面。うちの子の情報と次にやること。"></div><p class="mk-caption">ペットメキキの実画面</p></div>
+ <img class="mk-pets" src="assets/garden-integrated.jpg" alt="海辺の庭の平らな石畳に並んで座る犬と猫" width="1672" height="941">
+ <label class="mk-motion"><input type="checkbox" id="mk-stop"> 動きを止める</label>
+ </section>
+ <section class="mk-tour container"><div><p class="mk-eyebrow">EVERYDAY WITH YOUR PET</p><h2>小さな変化も、<br>大切な記録に。</h2><p>体重、成長の写真、受診の記録。<br>うちの子の情報を手元にまとめておけます。</p><a href="petmekiki.html">ペットメキキについて →</a></div><div class="mk-shots"><figure><img src="assets/pet-screen-9753.png" width="828" height="1792" alt="成長段階・体型・体重の実画面" loading="lazy"><figcaption>成長を振り返る</figcaption></figure><figure><img src="assets/pet-screen-9754.png" width="828" height="1792" alt="受診を記録する実画面" loading="lazy"><figcaption>受診の記録を残す</figcaption></figure></div></section>
   <!-- アプリ一覧 -->
   <section class="section" id="apps">
     <div class="container">
@@ -110,21 +75,21 @@
       <p class="section-desc">探し物のジャンルごとに「◯◯メキキ」をひとつずつリリースしていきます。第1弾ペットメキキ、第2弾防災グッズメキキ、第3弾ゴルフメキキの順で公開を予定しています。ジャンルによって、値段をならべられるもの、選ぶ手がかりを示すことが中心になるものがあります。</p>
             <div class="grid grid-3">
         <a class="card app-card" href="petmekiki.html">
-          <div class="app-thumb app-thumb--emoji" aria-hidden="true">🐾</div>
+          <div class="app-thumb"><img src="assets/pet-icon.png" alt="" width="96" height="96"></div>
           <span class="app-status status-soon">第1弾・公開準備中</span>
           <h3>ペットメキキ</h3>
           <p>うちの子の体重・体型・写真・通院を記録して、病院に見せる形にまとめられる。ワクチンや予防の次回日、フードが切れる日は端末がお知らせ。もしもの連絡先はワンタップで電話。<span class="card-more">くわしく見る →</span></p>
         </a>
 
         <a class="card app-card" href="bosaimekiki.html">
-          <div class="app-thumb app-thumb--emoji" aria-hidden="true">🧯</div>
+          <div class="app-thumb"><img src="assets/bousai-icon.png" alt="" width="96" height="96"></div>
           <span class="app-status status-soon">第2弾・公開準備中</span>
           <h3>防災グッズメキキ</h3>
           <p>災害の種類ごとに、逃げる先を決めておく。公的機関が示している備えを、足りない数で確かめる。避難場所は電波が届かないところでも表示します。<span class="card-more">くわしく見る →</span></p>
         </a>
 
         <a class="card app-card" href="golfsnowmekiki.html">
-          <div class="app-thumb app-thumb--emoji" aria-hidden="true">⛳</div>
+          <div class="app-thumb"><img src="assets/golf-icon.png" alt="" width="96" height="96"></div>
           <span class="app-status status-soon">第3弾・公開準備中</span>
           <h3>ゴルフメキキ</h3>
           <p>用品は型番をそろえて価格をならべ、ゴルフ場予約はポイントを差し引いた「実質価格」でも表示。<span class="card-more">くわしく見る →</span></p>
