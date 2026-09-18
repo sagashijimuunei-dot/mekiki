@@ -255,6 +255,7 @@ a.card:hover, a.card:focus, .card:hover { box-shadow: 8px 8px 0 rgba(46,44,57,0.
 }
 .status-soon { background: var(--pop-orange); }
 .status-plan { background: var(--ink-soft); }
+.status-live { background: var(--green-dark); }
 
 /* ---------- 3ステップ ---------- */
 .steps { counter-reset: step; display: grid; gap: 18px; }
